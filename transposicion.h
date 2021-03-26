@@ -9,7 +9,7 @@ using namespace std;
 class transposicion{
 	private int[] p;
 	public columna(int [] patron){
-		int a[] = new int[patron.lenght] //tamaño del patron
+		int a[] = new int[patron.lenght] //tamaÃ±o del patron
 		
 		int i=0;
 		
@@ -27,37 +27,11 @@ class transposicion{
 			i++;
 		}
 		
-		if(!b) throw new IllegalArgumentException();
 		
-		p = pattern;
 		
 	}
-	public byte[] encrypt(byte[] m) {
-		int l = m.length;
-		int n = p.length;
-		
-		byte c[] = new byte[l];
-		
-		int k = 0;
-		
-		for (int i = 0; i < n; i++)
-			for (int j = p[i]; j < l; j += n) c[k++] = m[j];
-		
-		return c;
-	}
-	public byte[] decrypt(byte[] c) {
-		int l = c.length;
-		int n = p.length;
-		
-		byte m[] = new byte[l];
-		
-		int k = 0;
-		
-		for (int i = 0; i < n; i++)
-			for (int j = p[i]; j < l; j += n) m[j] = c[k++];
-		
-		return m;
-	}
+	
+	
 }
 
 
